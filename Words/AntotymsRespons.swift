@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct WordsResponse: Codable {
+    let word: String
+    let antonyms: [String]?
+}

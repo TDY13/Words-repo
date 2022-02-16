@@ -18,6 +18,9 @@
 		178EB49127AD852400B0D017 /* CollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178EB49027AD852400B0D017 /* CollectionViewViewController.swift */; };
 		178EB49327AD854E00B0D017 /* WordsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178EB49227AD854E00B0D017 /* WordsData.swift */; };
 		178EB49527AD857000B0D017 /* WordsSavable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178EB49427AD857000B0D017 /* WordsSavable.swift */; };
+		17AFF2EE27BA8927003385C2 /* WordsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17AFF2EC27BA8927003385C2 /* WordsDataModel.xcdatamodeld */; };
+		17AFF2F027BC1415003385C2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFF2EF27BC1415003385C2 /* ViewModel.swift */; };
+		17AFF2F327BC176D003385C2 /* AntotymsRespons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFF2F227BC176D003385C2 /* AntotymsRespons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		178EB49027AD852400B0D017 /* CollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewViewController.swift; sourceTree = "<group>"; };
 		178EB49227AD854E00B0D017 /* WordsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsData.swift; sourceTree = "<group>"; };
 		178EB49427AD857000B0D017 /* WordsSavable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsSavable.swift; sourceTree = "<group>"; };
+		17AFF2ED27BA8927003385C2 /* WordsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordsDataModel.xcdatamodel; sourceTree = "<group>"; };
+		17AFF2EF27BC1415003385C2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		17AFF2F227BC176D003385C2 /* AntotymsRespons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntotymsRespons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 				178EB47E27AD826C00B0D017 /* Assets.xcassets */,
 				178EB48027AD826C00B0D017 /* LaunchScreen.storyboard */,
 				178EB48327AD826C00B0D017 /* Info.plist */,
+				17AFF2EC27BA8927003385C2 /* WordsDataModel.xcdatamodeld */,
+				17AFF2EF27BC1415003385C2 /* ViewModel.swift */,
+				17AFF2F227BC176D003385C2 /* AntotymsRespons.swift */,
 			);
 			path = Words;
 			sourceTree = "<group>";
@@ -163,6 +172,9 @@
 				178EB49527AD857000B0D017 /* WordsSavable.swift in Sources */,
 				178EB48D27AD84C300B0D017 /* CollectionViewCell.swift in Sources */,
 				178EB47A27AD826A00B0D017 /* ViewController.swift in Sources */,
+				17AFF2F027BC1415003385C2 /* ViewModel.swift in Sources */,
+				17AFF2EE27BA8927003385C2 /* WordsDataModel.xcdatamodeld in Sources */,
+				17AFF2F327BC176D003385C2 /* AntotymsRespons.swift in Sources */,
 				178EB49127AD852400B0D017 /* CollectionViewViewController.swift in Sources */,
 				178EB49327AD854E00B0D017 /* WordsData.swift in Sources */,
 				178EB48B27AD849000B0D017 /* TableViewCell.swift in Sources */,
@@ -376,6 +388,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		17AFF2EC27BA8927003385C2 /* WordsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				17AFF2ED27BA8927003385C2 /* WordsDataModel.xcdatamodel */,
+			);
+			currentVersion = 17AFF2ED27BA8927003385C2 /* WordsDataModel.xcdatamodel */;
+			path = WordsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 178EB46A27AD826A00B0D017 /* Project object */;
 }

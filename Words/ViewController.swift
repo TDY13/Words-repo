@@ -97,9 +97,15 @@ class ViewController: UIViewController {
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    func presentAntonyms(_ word: String, antonyms: [String]?) {
+        guard let antonyms = antonyms, antonyms.count > 0 else { return }
+        
+        let alert = UIAlertController(title: "Antonyms for \"\(word)\"", message: antonyms.joined(separator: ", "), preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Close", style: .destructive, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
 }
-
-
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
    
@@ -127,6 +133,20 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 86
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard indexPath.row < wordsArray.count else { return }
+        
+        let selectedWord = wordsArray[indexPath.row]
+        let firstSelectedWord = selectedWord.firstWord
+        
+        makeRequest(with: firstSelectedWord) { [weak self] antonyms in
+            DispatchQueue.main.async {
+                self?.presentAntonyms(firstSelectedWord, antonyms: antonyms)
+            }
+        }
+    }
+    
 }
 extension ViewController: WordsSavable {
     
